@@ -1,2 +1,2 @@
 print("hola")
-print ("si")
+si
