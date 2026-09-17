@@ -113,6 +113,7 @@ def imprimir_productos(productos: dict )-> None:
 
     Post:Imprime en consola los datos de todos los  productos.
   """      
+    print("funcion imprimir_productos: Muestra todos los productos almacenados")
 
 def ordenar_productos(productos:dict)-> None:
     """
@@ -120,6 +121,7 @@ def ordenar_productos(productos:dict)-> None:
     pre: Recibe el diccionario con todos los productos 
     post: Muestra en pantalla todos los productos ordenados 
     """
+    print("funcion ordenar_productos: muestra los productos en orden alfabetico")
 
 def total_facturado(ventas:dict)-> int:
 
@@ -129,6 +131,7 @@ def total_facturado(ventas:dict)-> int:
     post: Retorna la suma de todas las ventas como un número entero 
 
     """
+    print("funcion total_facturado: Muestra el total de las ventas")
 
 def prod_mas_vendido(productos:dict)-> None:
     """
@@ -136,6 +139,7 @@ def prod_mas_vendido(productos:dict)-> None:
     pre: Recibe el diccionario de ventas 
     post: no retorna nada, solo imprime el producto con mayor ventas
     """
+    print("Funcion prod_mas_vendido: Muestra el producto más vendido")
 
 def mostrar_menu() -> None:
     """
@@ -144,9 +148,78 @@ def mostrar_menu() -> None:
     pre:No recibe nada 
     post: No retorna nada, solo muestra las opciones al usuario.
     """
+
+    print("KIVA\n\n")
+    print("Elija una opcion\n")
+    print("1. Cargar un nuevo producto.")
+    print("2. Eliminar un producto.")
+    print("3. Buscar un producto.")
+    print("4. Modificar el stock de un producto")
+    print("5. Modificar el precio de un producto.")
+    print("6. Registrar venta.")
+    print("7. Eliminar venta.")
+    print("8. Modificar venta del dia.")
+    print("9. Mostrar ventas.")
+    print("10. Calcular el vuelto de una venta.")
+    print("11. Mostrar lista de productos.")
+    print("12. Elegir orden de los productos.")
+    print("13. Mostrar total facturado.")
+    print("14. Revisar el producto mas vendido.")
+    print("15. Pasar al dia siguiente.")
+    
+
 def main()-> None:
     """
     Ejecuta el código principal
     pre:No recibe nada
     post:No retorna nada, permite usar el código
     """
+    productos = {"nombres": [], "ids": [], "precios": [], "stock": []}
+    ventas = {"dias": [], "ganancias": [], "cantidad": []}
+    dia = 1
+    total = 0
+    monto = 0
+    venta_de_hoy = (0, 0)
+    while True:
+        mostrar_menu()
+        print()
+        opcion = input("Ingrese una opcion: ")
+        if opcion == "1":
+            registrar_producto(productos)
+        elif opcion == "2":
+            eliminar_producto(productos)
+        elif opcion == "3":
+            buscar_producto(productos)
+        elif opcion == "4":
+            modificar_stock(productos)
+        elif opcion == "5":
+            modificar_precio(productos)
+        elif opcion == "6":
+            registrar_venta(ventas, productos)
+        elif opcion == "7":
+            eliminar_venta(ventas)
+        elif opcion == "8":
+            modificar_venta(ventas, productos)
+        elif opcion == "9":
+            mostrar_ventas(ventas)
+        elif opcion == "10":
+            calcular_vuelto(total, monto)
+        elif opcion == "11":
+            imprimir_productos(productos)
+        elif opcion == "12":
+            ordenar_productos(productos)
+        elif opcion == "13":
+            total_facturado(ventas)
+        elif opcion == "14":
+            prod_mas_vendido(productos)
+        elif opcion == "0":
+            ventas 
+            dia += 1
+
+        else:
+            print("Opción Inválida. ")
+
+
+main()
+
+    
