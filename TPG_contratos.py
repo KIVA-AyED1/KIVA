@@ -213,9 +213,8 @@ def main()-> None:
         elif opcion == "14":
             prod_mas_vendido(productos)
         elif opcion == "15":
-            ventas 
             dia += 1
-
+            print("Pasa de día y carga las ventas. ")
         else:
             print("Opción Inválida. ")
 
