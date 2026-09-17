@@ -6,6 +6,7 @@ def registrar_producto(productos: dict) -> dict:
     Pre: Recibe el diccionario con los datos de los productos.
     Post: Devuelve el diccionario actualizado con los datos del nuevo producto.
     """
+    print("Función registrar producto: Permite registrar un producto.")
 
 
 
@@ -15,6 +16,7 @@ def eliminar_producto(productos: dict) -> dict:
     Pre: Recibe el diccionario que contiene todos los datos de todos los productos.
     Post: Devuelve el diccionario actualizado sin los datos del producto que fue eliminado.
     """
+    print("Funcion eliminar_producto: Peermite eliminar un producto del programa.")
 
 
 
@@ -24,6 +26,7 @@ def buscar_producto(productos: dict) -> str:
     Pre: Recibe el diccionario que contiene los nombres y los id's.
     Post: Retorna un string con los datos del producto que se queria buscar.
     """
+    print("Funcion buscar_producto: Permite buscar un producto y ver todos sus datos (id, nombre, precio y stock).")
 
 
 
@@ -33,6 +36,7 @@ def modificar_stock(productos: dict) -> dict:
     Pre: recibe el diccionario con los datos de todos los productos.
     Post: devuelve el diccionario actualizado con el stock modificado.
     """
+    print("Funcion modificar_stock: Permite modificar el stock de un producto.")
 
 
 
@@ -42,6 +46,7 @@ def modificar_precio(dict: dict) -> dict:
     Pre: Recibe el diccionario con los datos de todos los productos.
     Post: Devuelve el diccionario con el precio actualizado.
     """
+    print("Funcion modificar_precio: Permite modificar el precio de un producto.")
 
 
 
