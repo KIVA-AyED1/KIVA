@@ -212,7 +212,7 @@ def main()-> None:
             total_facturado(ventas)
         elif opcion == "14":
             prod_mas_vendido(productos)
-        elif opcion == "0":
+        elif opcion == "15":
             ventas 
             dia += 1
 
