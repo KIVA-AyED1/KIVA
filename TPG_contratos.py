@@ -215,8 +215,10 @@ def main()-> None:
         elif opcion == "15":
             dia += 1
             print("Pasa de día y carga las ventas. ")
+            break
         else:
             print("Opción Inválida. ")
+        
 
 
 main()
